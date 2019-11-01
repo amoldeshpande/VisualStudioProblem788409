@@ -1,0 +1,31 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "Build Debug",
+      "appliesTo": "/",
+      "type": "launch",
+      "contextType": "custom",
+      "command": "printenv.cmd",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "env": {
+        "DEBUG":"1",
+        "BUILD_DEBUG":"1"
+      }
+    },
+    {
+      "taskLabel": "GnuMake",
+      "appliesTo": "/",
+      "type": "default",
+      "contextType": "clean",
+      "command": "gnumake",
+      "args": [ "clean" ],
+      "inheritEnvironments": ["Clang-x64"]
+    },
+    {
+      "taskLabel": "task-haproxy",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

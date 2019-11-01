@@ -1,0 +1,44 @@
+{
+  "projectName": "HAProxy",
+  "environments": [
+    {
+      "PATH": "F:\\LLVM\\bin;${env.LOCALAPPDATA}\\Atlassian\\SourceTree\\git_local\\usr\\bin;${env.PATH}"
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Clang-x64",
+      "inheritEnvironments": [
+        "msvc_x64_x64"
+      ],
+      "includePath ,": [
+        "${env.INCLUDE}"
+      ],
+      "intelliSenseMode": "windows-clang-x64",
+      "environments": [
+        {
+          "PATH": "F:\\LLVM\\bin;${env.LOCALAPPDATA}\\Atlassian\\SourceTree\\git_local\\usr\\bin;${env.PATH}",
+          "environment": "msvc_x64_x64"
+        }
+      ]
+    }
+    /*,{
+      "inheritEnvironments": [
+        "msvc_x64_x64"
+      ],
+      "name": "Clang-x64-Debug",
+      "includePath ,": [
+        "${env.INCLUDE}"
+      ],
+      "defines": [ "DEBUG" ],
+      "intelliSenseMode": "windows-clang-x64",
+      "environments": [
+        {
+          "PATH": "F:\\LLVM\\bin;${env.LOCALAPPDATA}\\Atlassian\\SourceTree\\git_local\\usr\\bin;${env.PATH}",
+          "BUILD_DEBUG": 1
+        }
+      ]
+    }
+  */
+  ]
+}
