@@ -7,7 +7,7 @@
       "type": "launch",
       "contextType": "custom",
       "command": "printenv.cmd",
-      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "inheritEnvironments": [ "Clang-x64" ],
       "env": {
         "DEBUG":"1",
         "BUILD_DEBUG":"1"
